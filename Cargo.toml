@@ -1,5 +1,5 @@
 [package]
-name = "w8"
+name = "lc4j"
 version = "0.1.0"
 edition = "2021"
 authors = ["Cameron Mukherjee <cameron@hexploits.com>"]

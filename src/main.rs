@@ -27,10 +27,10 @@ struct DirectoryFile {
 }
 
 fn main() {
-    let matches = App::new("w8")
+    let matches = App::new("lc4j")
         .version("1.0")
         .author("Cameron Mukherjee <cameron@hexploits.com>")
-        .about("Get file, package and directory weights for your project.")
+        .about("Code reports for your Java repository")
         .arg(
             Arg::new("path")
                 .short('p')
