@@ -98,8 +98,8 @@ fn get_total_files_read(directory: &Directory) -> i32 {
 fn save_report(directory: &Directory) {
     let json = serde_json::to_string_pretty(&directory).unwrap();
     let timestamp = SystemTime::now().duration_since(UNIX_EPOCH).unwrap().as_secs();
-    let file_name = format!("./.w8-out/{}.json", timestamp.to_string());
-    match fs::create_dir("./.w8-out") {
+    let file_name = format!("./.lc4j-out/{}.json", timestamp.to_string());
+    match fs::create_dir("./.lc4j-out") {
         _ => {} // TODO - only ignore "AlreadyExists" error.
     }
     let mut file = File::create(file_name).unwrap();
